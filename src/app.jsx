@@ -10,8 +10,8 @@ export const App = () => {
 	const getStepUp = () => getActiveIndex(activeIndex + 1);
 	const getStartOver = () => getActiveIndex(0);
 
-	const isFirstStep = activeIndex === 0 ? true : false;
-	const isLastStep = activeIndex === data.length - 1 ? true : false;
+	const isFirstStep = activeIndex === 0;
+	const isLastStep = activeIndex === data.length - 1;
 
 	const { content } = steps[activeIndex];
 	const stepsItems = steps.map(({ id, title }, index) => {
